@@ -8,14 +8,26 @@ public class Rombo  {
     Scanner sc=new Scanner(System.in);
      double vlado1, vlado2, alturaA;
     double area;
+
+    public Rombo(double vlado1, double vlado2, double alturaA) {
+        this.vlado1 = vlado1;
+        this.vlado2 = vlado2;
+        this.alturaA = alturaA;
+    }
+
     public void alturaB()
     {
 
         alturaA=sc.nextDouble();
         double alturaB=getArea();
-        System.out.println("La altura de B es: "+alturaB);
 
 
+
+    }
+    public double perimetro(double lado1, double lado2)
+    {
+        double perimetro= 2*lado1+2*lado2;
+        return  perimetro;
     }
     public void valores()
     {
